@@ -2,7 +2,8 @@ include!(concat!(env!("OUT_DIR"), "/binding.rs"));
 
 fn main() {
     unsafe {
-        let x = fibonacci(3);
-        println!("{}", x);
+        for n in 0..10 {
+            println!("{}", fibonacci(n));
+        }
     }
 }
