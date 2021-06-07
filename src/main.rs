@@ -1,5 +1,4 @@
-mod binding;
-use binding::fibonacci;
+include!(concat!(env!("OUT_DIR"), "/binding.rs"));
 
 fn main() {
     unsafe {
