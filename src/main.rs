@@ -1,3 +1,9 @@
+mod binding;
+use binding::fibonacci;
+
 fn main() {
-    println!("Hello, world!");
+    unsafe {
+        let x = fibonacci(3);
+        println!("{}", x);
+    }
 }
